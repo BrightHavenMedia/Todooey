@@ -29,8 +29,8 @@ class TodoListViewController: UITableViewController {
         newItem3.title = "Destroy Demogorgon"
         itemArray.append(newItem3)
         
-//        if let items = defaults.array(forKey: "TodoListArray") as? [String] {
-//            itemArray = items
+        if let items = defaults.array(forKey: "TodoListArray") as? [Item] {
+            itemArray = items
             
         }
         // Do any additional setup after loading the view.
